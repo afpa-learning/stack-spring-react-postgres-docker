@@ -4,8 +4,8 @@
 
 # Etape 1 : compilation du projet
 FROM maven:3.9.3-eclipse-temurin-17-alpine as builder
-# paramétrage du dossier de travail
-WORKDIR /opt/epnak-api
+# paramétrage du dossier de travail, le nom est libre
+WORKDIR /opt/<nom-dossier-de-travail>
 # copie uniquement du pom.xml dans le conteneur
 COPY pom.xml .
 # copie du code source
